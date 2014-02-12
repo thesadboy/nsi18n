@@ -37,11 +37,15 @@ In jade file(or others, but not test) use "{{tag}}" to sign the local info
 extends layout
 block content
 	h1 {{hello_world}}
+	p {{welcome}}(thesadboy,thesadboy@qq.com)
 ```
 ###Use with _$
 ```
 app.get('/', function(req, res, next) {
 	res.send(_$(res,'hello_world'));
+});
+app.get('/count', function(req, res, next){
+	res.send(_$(res,'welcome', 'thesadboy', 'thesadboy@qq.com'));
 });
 ```
 ###Change the current local
@@ -51,12 +55,14 @@ Notice
 ###JS file demo(message_en.js)
 ```
 module.exports = {
-	hello_world : 'Hello World!'
+	hello_world : 'Hello World!',
+	welcome : 'Welcome {0}, your email is {1}!'
 }
 ```
 ###JSON file demo(message_en.json)
 ```
 {
 	"hello_world" : "Hello World"
+	"welcome" : "Welcome {0}, your email is {1}!"
 }
 ```
