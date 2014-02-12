@@ -10,5 +10,9 @@
     "i18n",
     "nsi18n"
   ],
-  "author": "thesadboy<thesadboy@qq.com>"
+  "author": "thesadboy<thesadboy@qq.com>",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/thesadboy/nsi18n.git"
+  }
 }
