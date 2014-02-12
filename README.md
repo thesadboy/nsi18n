@@ -45,7 +45,7 @@ app.get('/', function(req, res, next) {
 });
 ```
 ###Change the current local
-append a param "local" (eg. "local=en") to your url (eg. "http://localhost/?local=en") to change the current local.
+Append a param "local" (eg. "local=en") to your url (eg. "http://localhost/?local=en") to change the current local.
 Notice
 ======
 ###JS file demo(message_en.js)
